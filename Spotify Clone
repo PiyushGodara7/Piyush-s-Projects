@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- with this link we can use all icons of FONT osm--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+     <link rel="icon" href="./logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotifyClone.css">
+<!-- link copyied from googlefont-->    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./library_icon.png" >
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <p class="box-p1">Create your first playlist </p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="lib-box">
+                    <p class="box-p1">Let's find some podcast to follow</p>
+                    <p class="box-p2">We'll keep you update on new episodes</p>
+                    <button class="badge">Browse prodcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./backward_icon.png">
+                    <img src="./forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                <a href="playlist.html">
+                    <button class="badge nav-item hide" >Your Playlist</button> 
+                </a>
+                <button class="badge nav-item hide" >Explore Premium</button>
+                <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install Apps</button>
+                <i class="fa-regular fa-user nav-item"></i>
+            </div>
+        </div>
+
+            
+        <h2>Recently Played</h2>
+            <div class="card">
+                <img src="./card1img.jpeg" class="card-img" >
+                <p class="card-title">Top 50 - Global</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+            <div class="card">
+                <img src="./card2img.jpeg" class="card-img" >
+                <p class="card-title">Mahiye Jinne Sohna</p>
+                <p class="card-info">Darshan Raval</p>
+            </div>
+            <div class="card">
+                <img src="./card3img.jpeg" class="card-img" >
+                <p class="card-title">Top 50 - Global</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <div class="card">
+                <img src="./card4img.jpeg" class="card-img" >
+                <p class="card-title">Naa Ready(From"S..)</p>
+                <p class="card-info">Anirudh Ravichander, Thalapathy vijay, Asal..</p>
+            </div>
+            <div class="card">
+                <img src="./card2img.jpeg" class="card-img" >
+                <p class="card-title">Mahiye Jinne Sohna</p>
+                <p class="card-info">Darshan Raval</p>
+            </div>
+            <div class="card">
+                <img src="./card3img.jpeg" class="card-img" >
+                <p class="card-title">Top 50 - Global</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+        </div>
+        <h2>Featred Charts</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="./card5img.jpeg" class="card-img" >
+                <p class="card-title">Top Songs - Global</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <div class="card">
+                <img src="./card6img.jpeg" class="card-img" >
+                <p class="card-title">Top Songs - India</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+            <div class="card">
+                <img src="./card1img.jpeg" class="card-img" >
+                <p class="card-title">Top 50 - Global</p>
+                <p class="card-info">Your daily updates of the most played...</p>
+            </div>
+        </div>
+            <div class="footer">
+                <div class="line">
+
+                </div>
+            </div>
+
+
+           
+        </div>
+        <div class="music_player">
+            <div class="album">
+                <img src="./card2img.jpeg" class="albumimg">
+                <p style="font-size: 0.8rem; font-weight: 300; margin-left: 0.8rem;">Mahiye Jinne Sohna</p>
+                
+                <div class="album-icon">
+                    <i class="fa-regular fa-heart" ></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./player_icon1.png" class="player-control-icon">
+                    <img src="./player_icon2.png" class="player-control-icon">
+                    <img src="./player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./player_icon4.png" class="player-control-icon">
+                    <img src="./player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:52</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <input type="range" class="control-range">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+Playlistpage Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="./logo.png">
+<title>Spotify - Web Player: Music for everyone</title>  
+</head>
+<style>
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    height: 260px;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card:hover {
+    width: 165px;
+    background-color: #dddddd5b;
+
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;/*16px*/
+    margin-left: 0.5rem;
+    height: 100vh;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex; /*flex dete hi saare div ek line m aajaate h */
+    flex-direction: column;/*sare uper niche line m ajange */
+    justify-content: center; /*div k centre m aajega */
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option {
+   line-height: 2.5rem;
+   opacity: 0.7;
+   margin: 0.5rem 0.75rem;
+}
+.nav-opyion i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-option:hover {
+    line-height: 2.5rem;
+    opacity: 1;
+ }
+ .library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+ }
+ .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+ }
+ .icons {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+ }
+ .icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+ }
+ .icons i:hover{
+    opacity: 1;
+ }
+ .lib-box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+ }
+ .box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ .box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+    font-size: 2rem;
+    margin-left: 0.75rem;
+}
+.sticky-nav-icons i{
+    height: 2rem;
+    width: 2rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-item {
+    margin-right: 1rem;
+}
+a{
+    text-decoration: none;/*to remove underline*/
+    color: white;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+h2{
+    display: inline;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="SpotifyClone.html">Home</a>
+                </div>  
+                <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+            <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./library_icon.png" >
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <p class="box-p1">Create your first playlist </p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="lib-box">
+                    <p class="box-p1">Let's find some podcast to follow</p>
+                    <p class="box-p2">We'll keep you update on new episodes</p>
+                    <button class="badge">Browse prodcasts</button>
+                </div>
+            </div>
+        </div>
+        <!-- <h2>Your Music</h2> -->
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./card2img.jpeg" class="card-img" >
+                    <p class="card-title">Mahiye Jinne Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./card3img.jpeg" class="card-img" >
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./card4img.jpeg" class="card-img" >
+                    <p class="card-title">Naa Ready(From"S..)</p>
+                    <p class="card-info">Anirudh Ravichander, Thalapathy vijay, Asal..</p>
+                </div>
+                <div class="card">
+                    <img src="./card2img.jpeg" class="card-img" >
+                    <p class="card-title">Mahiye Jinne Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./card3img.jpeg" class="card-img" >
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./card2img.jpeg" class="card-img" >
+                    <p class="card-title">Mahiye Jinne Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./card4img.jpeg" class="card-img" >
+                    <p class="card-title">Naa Ready(From"S..)</p>
+                    <p class="card-info">Anirudh Ravichander, Thalapathy vijay, Asal..</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+
+CSS Code
+
+Body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0; /* to remove other extra spaces */
+    background-color: black;
+    overflow: hidden; /* ab scroll mhi hoga content isko scroll property denge sirf main-content m*/
+    color: white;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;/*16px*/
+    margin-left: 0.5rem;
+}
+.main_content{
+    background-color: blue;
+    flex: 1; /*sbhi baki DIV ko jga dene k baad jho b jga bachi vho sari iski ye mtlb h flex-1 ka*/
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;/*to remove underline*/
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex; /*flex dete hi saare div ek line m aajaate h */
+    flex-direction: column;/*sare uper niche line m ajange */
+    justify-content: center; /*div k centre m aajega */
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option {
+   line-height: 2.5rem;
+   opacity: 0.7;
+   margin: 0.5rem 0.75rem;
+}
+.nav-opyion i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-option:hover {
+    line-height: 2.5rem;
+    opacity: 1;
+ }
+ .library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+ }
+ .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+ }
+ .icons {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+ }
+ .icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+ }
+ .icons i:hover{
+    opacity: 1;
+ }
+ .lib-box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+ }
+ .box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ .box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+    font-size: 2rem;
+    margin-left: 0.75rem;
+}
+.sticky-nav-icons i{
+    height: 2rem;
+    width: 2rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-item {
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card:hover {
+    width: 165px;
+    background-color: #dddddd5b;
+
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-left: 1.7rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.albumimg{
+    height: 4rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+}
+.album{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album-icon {
+    margin-right: 16rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    display: flex;
+}
+.album-icon i{
+    display: flex;
+    margin-right: 0.9rem;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-icon{
+    display: flex;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: -50px;
+}
+.control-icon i{
+    display: flex;
+    margin-right: 0.9rem;
+}
+.control-range{
+    margin-left: 4rem;
+    width: 40%;
+    height: 3px;
+}
